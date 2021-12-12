@@ -1,11 +1,10 @@
 package com.young.springboot.web;
 
-import com.jayway.jsonpath.JsonPath;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.hamcrest.Matchers.is;
@@ -15,7 +14,7 @@ import static  org.springframework.test.web.servlet.result.MockMvcResultMatchers
 import static  org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 
 
-@RunWith(SpringRunner.class)
+@ExtendWith(SpringExtension.class)
 /* 테스트를 진행할 때 JUnit에 내장된 실행자 외에 다른 실행자를 실행시킵니다.
  여기서는 SpringRunner라는 스프링 실행자를 사용합니다.
  스프링부트 테스트와 Junit사이에 연결자 역할을 합니다.
