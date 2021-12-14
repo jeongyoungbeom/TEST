@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.young.springboot.web.IndexControllerTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-12-14T10:31:27" hostname="DESKTOP-GHN1RO2" time="0.137">
+  <properties/>
+  <testcase name="메인페이지_로딩()" classname="com.young.springboot.web.IndexControllerTest" time="0.137">
+    <failure message="java.lang.AssertionError: &#13;&#10;Expecting:&#13;&#10; &lt;&quot;&lt;!DOCTYPE HTML&gt;&#13;&#10;&lt;html&gt;&#13;&#10;&lt;head&gt;&#13;&#10;    &lt;title&gt;스프링부트 웹서비스&lt;/title&gt;&#13;&#10;    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;&#13;&#10;&#13;&#10;    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot;&gt;&#13;&#10;&lt;/head&gt;&#13;&#10;&lt;body&gt;&#13;&#10;&#13;&#10;&lt;h1&gt;스프링부트로 시작하는 웹 서비스 Ver.2&lt;/h1&gt;&#13;&#10;&lt;div class=&quot;col-md-12&quot;&gt;&#13;&#10;    &lt;div class=&quot;row&quot;&gt;&#13;&#10;        &lt;div class=&quot;col-md-6&quot;&gt;&#13;&#10;            &lt;a href=&quot;/posts/save&quot; role=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;글 등록&lt;/a&gt;&#13;&#10;                &lt;a href=&quot;/oauth2/authorization/google&quot; class=&quot;btn btn-success active&quot; role=&quot;button&quot;&gt;Google Login&lt;/a&gt;&#13;&#10;                &lt;a href=&quot;/oauth2/authorization/naver&quot; class=&quot;btn btn-secondary active&quot; role=&quot;button&quot;&gt;Naver Login&lt;/a&gt;&#13;&#10;        &lt;/div&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;    &lt;br&gt;&#13;&#10;    &lt;!-- 목록 출력 영역 --&gt;&#13;&#10;    &lt;table class=&quot;table table-horizontal table-bordered&quot;&gt;&#13;&#10;        &lt;thead class=&quot;thead-strong&quot;&gt;&#13;&#10;        &lt;tr&gt;&#13;&#10;            &lt;th&gt;게시글번호&lt;/th&gt;&#13;&#10;            &lt;th&gt;제목&lt;/th&gt;&#13;&#10;            &lt;th&gt;작성자&lt;/th&gt;&#13;&#10;            &lt;th&gt;최종수정일&lt;/th&gt;&#13;&#10;        &lt;/tr&gt;&#13;&#10;        &lt;/thead&gt;&#13;&#10;        &lt;tbody id=&quot;tbody&quot;&gt;&#13;&#10;        &lt;/tbody&gt;&#13;&#10;    &lt;/table&gt;&#13;&#10;&lt;/div&gt;&#13;&#10;&#13;&#10;&lt;script src=&quot;https://code.jquery.com/jquery-3.3.1.min.js&quot;&gt;&lt;/script&gt;&#13;&#10;&lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;&#13;&#10;&#13;&#10;&lt;!--index.js 추가--&gt;&#13;&#10;&lt;script src=&quot;/js/app/index.js&quot;&gt;&lt;/script&gt;&#13;&#10;&lt;/body&gt;&#13;&#10;&lt;/html&gt;&quot;&gt;&#13;&#10;to contain:&#13;&#10; &lt;&quot;스프링 부트로 시작하는 웹 서비스&quot;&gt; " type="java.lang.AssertionError">java.lang.AssertionError: 
+Expecting:
+ &lt;&quot;&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;스프링부트 웹서비스&lt;/title&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;스프링부트로 시작하는 웹 서비스 Ver.2&lt;/h1&gt;
+&lt;div class=&quot;col-md-12&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;a href=&quot;/posts/save&quot; role=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;글 등록&lt;/a&gt;
+                &lt;a href=&quot;/oauth2/authorization/google&quot; class=&quot;btn btn-success active&quot; role=&quot;button&quot;&gt;Google Login&lt;/a&gt;
+                &lt;a href=&quot;/oauth2/authorization/naver&quot; class=&quot;btn btn-secondary active&quot; role=&quot;button&quot;&gt;Naver Login&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;br&gt;
+    &lt;!-- 목록 출력 영역 --&gt;
+    &lt;table class=&quot;table table-horizontal table-bordered&quot;&gt;
+        &lt;thead class=&quot;thead-strong&quot;&gt;
+        &lt;tr&gt;
+            &lt;th&gt;게시글번호&lt;/th&gt;
+            &lt;th&gt;제목&lt;/th&gt;
+            &lt;th&gt;작성자&lt;/th&gt;
+            &lt;th&gt;최종수정일&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody id=&quot;tbody&quot;&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;https://code.jquery.com/jquery-3.3.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!--index.js 추가--&gt;
+&lt;script src=&quot;/js/app/index.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;&quot;&gt;
+to contain:
+ &lt;&quot;스프링 부트로 시작하는 웹 서비스&quot;&gt; 
+	at com.young.springboot.web.IndexControllerTest.메인페이지_로딩(IndexControllerTest.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</failure>
+  </testcase>
+  <system-out><![CDATA[2021-12-14 19:31:26.090  INFO 31312 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.young.springboot.web.IndexControllerTest], using SpringBootContextLoader
+2021-12-14 19:31:26.091  INFO 31312 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.young.springboot.web.IndexControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-12-14 19:31:26.091  INFO 31312 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.young.springboot.web.IndexControllerTest]: IndexControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-12-14 19:31:26.092  INFO 31312 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.young.springboot.Application for test class com.young.springboot.web.IndexControllerTest
+2021-12-14 19:31:26.094  INFO 31312 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-12-14 19:31:26.094  INFO 31312 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e4e4a26, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@598751b4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7c03ee06, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@67229384, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7b21fa3c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@18480e1d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7b58a0cc, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@895a290, org.springframework.test.context.event.EventPublishingTestExecutionListener@7c1149a4, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@247198dd, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1a91025f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3fb5b2bf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@491f8084, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@61005e0a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@73912b8f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@61234f08]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.1)
+
+2021-12-14 19:31:26.115  INFO 31312 --- [    Test worker] c.y.springboot.web.IndexControllerTest   : Starting IndexControllerTest using Java 11.0.11 on DESKTOP-GHN1RO2 with PID 31312 (started by jybeo in D:\TEST)
+2021-12-14 19:31:26.115  INFO 31312 --- [    Test worker] c.y.springboot.web.IndexControllerTest   : The following profiles are active: oauth
+2021-12-14 19:31:26.243  INFO 31312 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-14 19:31:26.253  INFO 31312 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
+2021-12-14 19:31:26.451  INFO 31312 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-12-14 19:31:26.462  INFO 31312 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-14 19:31:26.462  INFO 31312 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-12-14 19:31:26.568  INFO 31312 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-14 19:31:26.568  INFO 31312 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 451 ms
+2021-12-14 19:31:26.598  INFO 31312 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-12-14 19:31:26.599  INFO 31312 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-12-14 19:31:26.599  INFO 31312 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-12-14 19:31:26.694  INFO 31312 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-14 19:31:26.700  INFO 31312 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+Hibernate: drop table if exists posts
+Hibernate: drop table if exists user
+Hibernate: create table posts (id bigint not null auto_increment, created_date datetime(6), modified_date datetime(6), author varchar(255), content TEXT not null, title varchar(500) not null, primary key (id)) engine=InnoDB
+Hibernate: create table user (id bigint not null auto_increment, email varchar(255) not null, name varchar(255) not null, picture varchar(255), role varchar(255) not null, primary key (id)) engine=InnoDB
+2021-12-14 19:31:26.740  INFO 31312 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-14 19:31:26.740  INFO 31312 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 19:31:26.901  WARN 31312 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-14 19:31:27.028  INFO 31312 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46c5eb4f, org.springframework.security.web.context.SecurityContextPersistenceFilter@7ca43940, org.springframework.security.web.header.HeaderWriterFilter@449a24a5, org.springframework.security.web.authentication.logout.LogoutFilter@4f90f04a, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@334da325, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@2e9ee919, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@d361a73, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@cd00b6e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78ececda, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d46506e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@525ad55a, org.springframework.security.web.session.SessionManagementFilter@1a2f47e2, org.springframework.security.web.access.ExceptionTranslationFilter@46f85698, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6465c74e]
+2021-12-14 19:31:27.094  INFO 31312 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-14 19:31:27.114  INFO 31312 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-14 19:31:27.249  INFO 31312 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5049 (http) with context path ''
+2021-12-14 19:31:27.252  INFO 31312 --- [    Test worker] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2021-12-14 19:31:27.253  INFO 31312 --- [    Test worker] c.y.springboot.web.IndexControllerTest   : Started IndexControllerTest in 1.156 seconds (JVM running for 6.916)
+2021-12-14 19:31:27.322  INFO 31312 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-14 19:31:27.322  INFO 31312 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-14 19:31:27.323  INFO 31312 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_ order by posts0_.id DESC
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

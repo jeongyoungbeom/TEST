@@ -1,9 +1,13 @@
 package com.young.springboot.web;
 
+import com.young.springboot.config.auth.SecurityConfig;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.FilterType;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -19,7 +23,10 @@ import static  org.springframework.test.web.servlet.result.MockMvcResultMatchers
  여기서는 SpringRunner라는 스프링 실행자를 사용합니다.
  스프링부트 테스트와 Junit사이에 연결자 역할을 합니다.
  */
-@WebMvcTest(controllers = HelloController.class)
+@WebMvcTest(controllers = HelloController.class,
+excludeFilters = {
+        @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, classes = SecurityConfig.class)
+})
 /* 여러 스프링 테스트 어노테이션 중, Web(Spring MVC)에 집중할 수 있는 어노테이션
 선언할 경우 Controller, @ControllerAdvice 등을 사용할 수 있습니다.
 @Service, @Component, @Repository 등은 사용할 수 없습니다.
@@ -37,6 +44,7 @@ class HelloControllerTest {
      */
 
     @Test
+    @WithMockUser(roles="USER")
     void hello가_리턴된다() throws Exception {
         String hello = "hello";
 
@@ -61,6 +69,7 @@ class HelloControllerTest {
     }
 
     @Test
+    @WithMockUser(roles="USER")
     public void helloDto가_리턴된다() throws Exception {
         String name = "hello";
         int amount = 1000;
